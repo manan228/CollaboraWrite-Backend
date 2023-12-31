@@ -1,0 +1,21 @@
+{
+  "version": "0.1.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "development",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}\\server.js",
+      "envFile": "${workspaceFolder}/env/.env.development"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "production",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}\\server.js",
+      "envFile": "${workspaceFolder}/env/.env.production"
+    }
+  ]
+}
